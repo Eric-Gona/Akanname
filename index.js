@@ -11,4 +11,17 @@ function akaname(event) {
     var male = document.getElementById("male");
     var female = document.getElementById("female");
     var rname = document.getElementById("aka-name");
+    
 
+    if (day == null || day == "", month == null || month == "", year == null || year == "") {
+        alert("Please Fill All Required Field");
+        return false;
+    }
+
+    if (day <= 0 || day > 31) {
+        alert("enter valid date");
+        return false;
+    } else if (month <= 0 || month > 12) {
+        alert("enter valid month");
+        return false;
+    }
