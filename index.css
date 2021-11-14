@@ -10,6 +10,11 @@
     font-size:xx-large;
 }
 
+.image{
+    float: right;
+}
+
+
 .button{
 text-align: center;
 padding: 20px 32px;
