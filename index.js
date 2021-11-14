@@ -34,3 +34,22 @@ function akaname(event) {
 
     var dayOfTheWeek = Math.round((((c / 4) - 2 * c - 1) + ((5 * y / 4)) + ((26 * (m + 1) / 10)) + d) % 7);
 
+    
+    if (male.checked == true) {
+
+
+        for (var a = 0; a < maleName.length; a++) {
+            if (a === dayOfTheWeek - 1) {
+                rname.innerHTML = "Your Akan name is " + maleName[a];
+            }
+        }
+    } else if (female.checked == true) {
+        for (var a = 0; a < femaleName.length; a++) {
+            if (a === dayOfTheWeek - 1) {
+                rname.innerHTML = "Your Akan name is " + femaleName[a];
+            }
+        }
+
+    }
+}
+
