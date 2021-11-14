@@ -6,12 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="test/bootstrap.min.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 
     <title>akaname</title>
-    <!--Bootstrap CSS -->
-
 </head>
-
 <body>
+    <div class="container bg-successs col-sm-6">
+    <img src="./akan image.jpg" class="rounded float-left" alt="..." height="100" width="100">
+    <img src="./akan image.jpg" class="rounded float-right" alt="..." height="100" width="100">
+    <legend id="top">KNOW YOUR AKAN NAME</legend>
+    <form><br>
+        <p>Iput your date of birth, month and year so as we can display your Akan name.</p>
+
+        <div class="tin">
+        <div class="day">
+            <label for="day">Day:</label>
+            <div class="col-sm-4">
+                <input type="day" name="day" id="day" maxlength="2">
+            </div>
+        </div><br>
+        <div class="month">
+            <label for="month">Month</label>
+            <div class="col-sm-4">
+                <input name="month" id="month" maxlength="2" required>
+            </div>
+        </div><br>
+        <div class="year">
+            <label for="year">Year</label>
+            <div class="col-sm-4">
+                <input type="year" name="year" id="year" maxlength="4" required>
+            </div>
+        </div>
+    </div>
+
+            <label>MALE</label></br>
+            <input type="radio" id="male" name="gender" required> </br>
+            <label>FEMALE</label></br>
+            <input type="radio" id="female" name="gender" required> </br>
+
+            <div class="button">
+                <button type="submit" value="Submit" 
+                    onclick="akaname(event)">submit
+                </button>
+                <button type="Reset" value="Reset"  
+                onclick="reset(event)">reset
+            </button>
+            </div>
+
+        </form>
+    </div>
+    <p id="aka-name"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
