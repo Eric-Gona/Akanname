@@ -13,12 +13,14 @@
     <!--Bootstrap CSS -->
 
 </head>
-<div class="container bg-successs col-sm-6">
+<body>
+    <div class="container bg-successs col-sm-6">
     <img src="./pics/akan.jpg" class="rounded float-left" alt="..." height="100" width="100">
     <img src="./pics/akan.jpg" class="rounded float-right" alt="..." height="100" width="100">
     <legend id="top">KNOW YOUR AKAN NAME</legend>
     <form><br>
         <p>You are to iput your date of birth and month and year so as we can give you your name in Akan.</p>
+        
         <div class="day">
             <label for="day">Day:</label>
             <div class="col-sm-4">
@@ -36,5 +38,24 @@
             <div class="col-sm-4">
                 <input type="year" name="year" id="year" maxlength="4" required>
             </div>
-        </div>
-<body>
+
+            <label>MALE</label></br>
+            <input type="radio" id="male" name="gender" required> </br>
+            <label>FEMALE</label></br>
+            <input type="radio" id="female" name="gender" required> </br>
+            <div class="btn">
+                <button type="submit" value="submit" class="btn btn-outline-info"
+                    onclick="akaname(event)">submit</button>
+                <button type="reset" value="reset" class="btn btn-outline-danger" onclick="reset()">reset</button>
+            </div>
+
+        </form>
+    </div>
+    <p id="aka-name"></p>
+    <!-- <div class="akan-name" id="aka-name"></div> -->
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
