@@ -11,7 +11,7 @@ function akaname(event) {
     var male = document.getElementById("male");
     var female = document.getElementById("female");
     var rname = document.getElementById("aka-name");
-    
+
 
     if (day == null || day == "", month == null || month == "", year == null || year == "") {
         alert("Please Fill All Required Field");
@@ -25,3 +25,12 @@ function akaname(event) {
         alert("enter valid month");
         return false;
     }
+    var sliceY = year % 100;
+    var sliceC = Math.floor(year / 100);
+    var c = parseInt(sliceC);
+    var y = parseInt(sliceY);
+    var d = day;
+    var m = month;
+
+    var dayOfTheWeek = Math.round((((c / 4) - 2 * c - 1) + ((5 * y / 4)) + ((26 * (m + 1) / 10)) + d) % 7);
+
