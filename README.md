@@ -15,4 +15,4 @@ Technologies used are HTML CSS an Javascript.
 ## Contact information
 For any concerns, please contact eric.karisa@student.moringaschool.com
 ## License
-Copyright (c) 2021
+Determine the license under which this application can be used. See below for more details on licensing. Copyright (c) {2021} {ERIC KARISA}
