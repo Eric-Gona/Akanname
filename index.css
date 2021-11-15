@@ -20,3 +20,9 @@ padding: 20px 32px;
 border-radius: 20px;
 color: green;
 }
+
+#aka-name {
+    color: purple;
+    text-align: center;
+    font-size:30px;
+}
